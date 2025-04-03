@@ -1,0 +1,44 @@
+/* Custom styles that override or extend Tailwind */
+body {
+    scroll-behavior: smooth;
+}
+
+/* Hero section text shadow for better readability */
+.hero-video + div h1,
+.hero-video + div p {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Model card hover effects */
+.bg-gray-900:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+/* Mobile menu animation */
+.fixed.inset-0 {
+    transition: opacity 0.3s ease;
+}
+
+/* Form input styling */
+input[type="email"]:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+}
+
+/* Button hover effects */
+button:hover {
+    opacity: 0.9;
+    transition: opacity 0.2s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-video + div h1 {
+        font-size: 2.5rem;
+    }
+    .hero-video + div p {
+        font-size: 1rem;
+    }
+}
