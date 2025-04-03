@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .hero-video {
+            height: 100vh;
+            object-fit: cover;
+        }
+        .nav-link:hover {
+            background-color: rgba(255,255,255,0.1);
+        }
+    </style>
+</head>
+<body class="font-sans bg-black text-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-black bg-opacity-80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="text-white text-2xl font-bold">TESLA</a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#models" class="nav-link px-3 py-2 rounded-md text-sm font-medium">Model S</a>
+                    <a href="#models" class="nav-link px-3 py-2 rounded-md text-sm font-medium">Model 3</a>
+                    <a href="#models" class="nav-link px-3 py-2 rounded-md text-sm font-medium">Model X</a>
+                    <a href="#models" class="nav-link px-3 py-2 rounded-md text-sm font-medium">Model Y</a>
+                    <a href="#solar" class="nav-link px-3 py-2 rounded-md text-sm font-medium">Solar Roof</a>
+                    <a href="#solar" class="nav-link px-3 py-2 rounded-md text-sm font-medium">Solar Panels</a>
+                </div>
+                
+                <!-- Right Menu -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="#" class="text-white px-3 py-2 rounded-md text-sm font-medium">Shop</a>
+                    <a href="#" class="text-white px-3 py-2 rounded-md text-sm font-medium">Account</a>
+                    <button class="text-white px-3 py-2 rounded-md text-sm font-medium">Menu</button>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-white">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative">
+        <video autoplay loop muted class="w-full hero-video">
+            <source src="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto/Homepage-Model-Y-Desktop-NA.mp4" type="video/mp4">
+        </video>
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-center pt-20">
+            <h1 class="text-4xl md:text-6xl font-bold mb-2">Model Y</h1>
+            <p class="text-lg md:text-xl mb-8">Lease starting at $399/mo</p>
+            <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
+                <button class="bg-white text-black px-12 py-2 rounded-md font-medium">Order Now</button>
+                <button class="bg-transparent border-2 border-white text-white px-12 py-2 rounded-md font-medium">Demo Drive</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Models Section -->
+    <section id="models" class="py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Tesla Models</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Model S Card -->
+                <div class="bg-gray-900 rounded-lg overflow-hidden">
+                    <img src="https://images.pexels.com/photos/3729464/pexels-photo-3729464.jpeg" alt="Tesla Model S" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Model S</h3>
+                        <p class="text-gray-400 mb-4">Plaid: 396 mi range</p>
+                        <button class="w-full bg-blue-600 text-white py-2 rounded-md">Custom Order</button>
+                    </div>
+                </div>
+                
+                <!-- Model 3 Card -->
+                <div class="bg-gray-900 rounded-lg overflow-hidden">
+                    <img src="https://images.pexels.com/photos/112460/pexels-photo-112460.jpeg" alt="Tesla Model 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Model 3</h3>
+                        <p class="text-gray-400 mb-4">358 mi range</p>
+                        <button class="w-full bg-blue-600 text-white py-2 rounded-md">Custom Order</button>
+                    </div>
+                </div>
+                
+                <!-- Model X Card -->
+                <div class="bg-gray-900 rounded-lg overflow-hidden">
+                    <img src="https://images.pexels.com/photos/1007410/pexels-photo-1007410.jpeg" alt="Tesla Model X" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Model X</h3>
+                        <p class="text-gray-400 mb-4">Plaid: 333 mi range</p>
+                        <button class="w-full bg-blue-600 text-white py-2 rounded-md">Custom Order</button>
+                    </div>
+                </div>
+                
+                <!-- Model Y Card -->
+                <div class="bg-gray-900 rounded-lg overflow-hidden">
+                    <img src="https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg" alt="Tesla Model Y" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Model Y</h3>
+                        <p class="text-gray-400 mb-4">330 mi range</p>
+                        <button class="w-full bg-blue-600 text-white py-2 rounded-md">Custom Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-400 py-12 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-white font-bold mb-4">Tesla</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white">About</a></li>
+                        <li><a href="#" class="hover:text-white">Careers</a></li>
+                        <li><a href="#" class="hover:text-white">Investors</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold mb-4">Vehicles</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white">Model S</a></li>
+                        <li><a href="#" class="hover:text-white">Model 3</a></li>
+                        <li><a href="#" class="hover:text-white">Model X</a></li>
+                        <li><a href="#" class="hover:text-white">Model Y</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold mb-4">Energy</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white">Solar Panels</a></li>
+                        <li><a href="#" class="hover:text-white">Solar Roof</a></li>
+                        <li><a href="#" class="hover:text-white">Powerwall</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold mb-4">Connect</h3>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="hover:text-white"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-white"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <p>Subscribe to our newsletter</p>
+                    <div class="mt-2 flex">
+                        <input type="email" placeholder="Your email" class="bg-gray-800 text-white px-4 py-2 rounded-l-md w-full">
+                        <button class="bg-blue-600 text-white px-4 py-2 rounded-r-md">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-sm">
+                <p>Tesla © 2023</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
